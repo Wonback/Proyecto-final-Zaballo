@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/** le quito la decoracion violeta a los links ya visitados **/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #862016;
+}
+
+/**Estilo para el header**/
+
+.header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #862016;
+  position: sticky;
+  top: 0;
+  height: 14vh;
+}
+
+.logo-header {
+  max-width: 12vw;
+  padding: 0 2rem;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lista-header li {
+  list-style-type: none;
+  background-color: transparent;
+  padding-right: 3rem;
+  font-weight: bolder;
+  font-size: 2vw;
+  font-family: "Grenze Gotisch", cursive;
+  color: #b62e22;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.link:hover {
+  color: #e73525;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**Estilo para el main**/
+
+.main-section {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.main-section img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
+
+.titulo-rojo {
+  font-family: "Grenze Gotisch", cursive;
+  color: #862016;
+  font-size: 5vw;
+}
+
+.subtitulo-blanco {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vw;
+  color: #fefeff;
+  text-align: center;
+}
+
+/**Estilo para el primer section con clase "aftermath"**/
+
+.aftermath {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10rem 0;
+}
+
+/**Estilo para el parrafo gris en el primer section**/
+
+.texto-blanco {
+  font-family: "Roboto", sans-serif;
+  color: #c0c0c0;
+  text-align: center;
+  padding: 3rem 0;
+  line-height: 30px;
+
+  max-width: 30rem;
+}
+
+/**Estilo del footer**/
+
+.footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  color: #dbdbdb;
+  align-items: center;
+  padding: 2rem 2rem;
+  border-top: 2px solid #862016;
+  font-family: "Roboto", sans-serif;
+}
+
+/**Div que abarca los iconos de las redes sociales en el footer**/
+
+.socialmedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia img {
+  width: 40px;
+  padding-right: 1rem;
+}
+
+/**Estilo del logo de la banda que se encuentra en el footer**/
+
+.footer img {
+  max-width: 100px;
+}
+
+/**--------------------------Estilo pagina "Members"--------------------------**/
+
+.members {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(6, auto);
+  justify-content: center;
+  grid-template-areas:
+    "mordekaiser mordekaiser-img"
+    "karthus-img karthus"
+    "sona sona-img"
+    "kayle-img kayle"
+    "olaf olaf-img"
+    "yorick-img yorick";
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.members img {
+  padding-top: 2rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.mordekaiser {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-top: 2rem;
+  grid-area: mordekaiser;
+}
+
+.mordekaiser-img {
+  grid-area: mordekaiser-img;
+}
+
+.karthus {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  grid-area: karthus;
+}
+
+.karthus-img {
+  grid-area: karthus-img;
+}
+
+.sona {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-top: 2rem;
+  grid-area: sona;
+}
+
+.sona-img {
+  grid-area: sona-img;
+}
+
+.kayle {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  grid-area: kayle;
+}
+
+.kayle-img {
+  grid-area: kayle-img;
+}
+
+.yorick {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  grid-area: yorick;
+}
+
+.yorick-img {
+  grid-area: yorick-img;
+}
+
+.olaf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-top: 2rem;
+  grid-area: olaf;
+}
+
+.olaf-img {
+  grid-area: olaf-img;
+}
+
+/**Estilo para el texto de la pagina "miembros"**/
+
+.subtitulo-blanco2 {
+  font-family: "Roboto", sans-serif;
+  color: #fefeff;
+  font-size: 2vw;
+  width: 35vw;
+}
+
+.texto-blanco2 {
+  font-family: "Roboto", sans-serif;
+  color: #b9b9b9;
+  padding-top: 2rem;
+  width: 40vw;
+  line-height: 25px;
+}
+
+/**------------------------Estilo para la pagina "discografia"-------------------------**/
+
+.discografia {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 85vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.titulo-album1 {
+  font-family: "Grenze Gotisch", cursive;
+  color: #655938;
+  text-align: center;
+  font-size: 3vw;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.titulo-album2 {
+  font-family: "Grenze Gotisch", cursive;
+  color: #0b656a;
+  font-size: 3vw;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.titulo-album3 {
+  font-family: "Grenze Gotisch", cursive;
+  color: #4e6055;
+  font-size: 3vw;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/**------------------------Estilo para la pagina "galería"-------------------------**/
+
+.galeria-fotos {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding-top: 2rem;
+}
+
+.galeria-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.galeria-videos {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.youtube {
+  padding-bottom: 2rem;
+  width: 50%;
+}
+
+/**---------------------------Estilo de la pagina "contacto"---------------------------**/
+
+/**Estilo de las cajas imput**/
+
+.type-box {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #862016;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: #000000;
+  color: #b9b9b9;
+}
+
+.contacto {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.formulario {
+  border-radius: 5px;
+  background-color: #0f0403;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #862016 0%, #000000 100%);
+  padding: 1rem 1rem;
+  width: 30rem;
+}
+
+/**Estilo de la fuente sobre las cajas imput**/
+
+.label {
+  font-family: "Grenze Gotisch", cursive;
+  background: transparent;
+  font-size: 30px;
+}
+
+/**Estilo de los botones al final del formulario**/
+
+.formulario-botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: row-reverse;
+}
+
+.formulario-botones input {
+  margin: 1rem 2rem;
+}
+
+/**Estilo boton enviar**/
+
+.boton-enviar {
+  width: 100%;
+  background-color: #488b53;
+  color: white;
+  padding: 10px 30px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.boton-enviar:hover {
+  background-color: #45a049;
+}
+
+/**Estilo boton reset**/
+
+.boton-reset {
+  width: 100%;
+  background-color: #c46d6d;
+  color: white;
+  padding: 10px 30px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.boton-reset:hover {
+  background-color: #c05d5d;
+}
+
+/* //////////////////////////////////////ESTILO PARA MOBILE/////////////////////////////// */
+@media only screen and (max-width: 600px) {
+  /**Estilo para el header**/
+
+  .header {
+    height: auto;
+    flex-direction: column;
+    border-bottom: 1px solid #862016;
+    position: static;
+  }
+
+  .logo-header {
+    max-width: 30vw;
+    padding-top: 0.5rem;
+  }
+
+  .lista-header {
+    flex-direction: column;
+  }
+
+  .lista-header li {
+    color: #862016;
+    font-size: 4vw;
+    padding: 0.1rem 0rem;
+  }
+
+  /**Estilo para el main**/
+
+  .main-section img {
+    max-width: 100vh;
+    object-fit: cover;
+  }
+
+  /**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
+
+  .titulo-rojo {
+    font-size: 12vw;
+  }
+  .subtitulo-blanco {
+    font-size: 4vw;
+    padding-bottom: 2rem;
+  }
+
+  /**Estilo para el primer section con clase "aftermath"**/
+  .aftermath {
+    padding: 1rem 1rem;
+  }
+  /**Estilo para el parrafo gris en el primer section**/
+
+  .texto-blanco {
+    width: 70vw;
+    padding: 4rem 0;
+  }
+
+  /**Estilo del footer**/
+
+  .footer {
+    padding: 1rem 1rem;
+    border-top: 1px solid #862016;
+  }
+
+  /**Div que abarca los iconos de las redes sociales en el footer**/
+
+  .socialmedia img {
+    width: 5vw;
+    padding: 0 0.4rem;
+  }
+
+  /**Estilo del logo de la banda que se encuentra en el footer**/
+
+  .footer img {
+    max-width: 15vw;
+    padding: 0 0.3rem;
+  }
+
+  /**--------------------------Estilo pagina "Members"--------------------------**/
+
+  .members {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "mordekaiser" "mordekaiser-img" "karthus" "karthus-img" "sona" "sona-img" "kayle" "kayle-img" "olaf" "olaf-img" "yorick" "yorick-img";
+    row-gap: 1rem;
+  }
+
+  .members img {
+    max-width: 100vw;
+  }
+
+  .mordekaiser {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .mordekaiser-img {
+    grid-area: mordekaiser-img;
+  }
+
+  .karthus {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #862016;
+  }
+
+  .karthus-img {
+    grid-area: karthus-img;
+  }
+
+  .sona {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #862016;
+  }
+
+  .sona-img {
+    grid-area: sona-img;
+  }
+
+  .kayle {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #862016;
+  }
+
+  .kayle-img {
+    grid-area: kayle-img;
+  }
+
+  .yorick {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #862016;
+  }
+
+  .yorick-img {
+    grid-area: yorick-img;
+  }
+
+  .olaf {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #862016;
+  }
+
+  .olaf-img {
+    grid-area: olaf-img;
+  }
+
+  /**Estilo para el texto de la pagina "miembros"**/
+
+  .subtitulo-blanco2 {
+    width: 70vw;
+    font-size: 4vw;
+  }
+
+  .texto-blanco2 {
+    color: #b9b9b9;
+    width: 60vw;
+  }
+
+  /**------------------------Estilo para la pagina "discografia"-------------------------**/
+
+  .discografia {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .album {
+    padding: 1rem 2rem;
+  }
+
+  .titulo-album1 {
+    font-size: 8vw;
+  }
+
+  .titulo-album2 {
+    font-size: 8vw;
+  }
+
+  .titulo-album3 {
+    font-size: 8vw;
+  }
+
+  /**------------------------Estilo para la pagina "galería"-------------------------**/
+
+  .fotos {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(9, auto);
+    padding-bottom: 1rem;
+  }
+
+  .galeria-videos {
+    padding: 0 0;
+    border-top: 1px solid #862016;
+  }
+
+  .videos {
+    padding: 1rem 0;
+  }
+
+  .youtube {
+    width: 80vw;
+  }
+
+  /**---------------------------Estilo de la pagina "contacto"---------------------------**/
+
+  /**Estilo de las cajas imput**/
+
+  .type-box {
+    width: 100%;
+    padding: 2vw 2vw;
+    margin: 0 0;
+    margin: 1vw 0;
+    border-radius: 10px;
+    font-size: 3vw;
+    background-color: #000000;
+  }
+
+  .formulario {
+    border-radius: 10px;
+    width: 80vw;
+  }
+
+  /**Estilo de la fuente sobre las cajas imput**/
+
+  .label {
+    font-size: 6vw;
+  }
+
+  /**Estilo boton enviar**/
+
+  .boton-enviar {
+    font-size: 3vw;
+  }
+
+  .boton-enviar:hover {
+    background-color: #45a049;
+  }
+
+  /**Estilo boton reset**/
+
+  .boton-reset {
+    font-size: 3vw;
+  }
+
+  .boton-reset:hover {
+    background-color: #c05d5d;
+  }
+}
