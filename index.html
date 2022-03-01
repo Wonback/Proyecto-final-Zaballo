@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pentakill</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- ////////////////////////////////////////////// BODY ////////////////////////////////////////////// -->
@@ -23,14 +24,16 @@
         </nav>
     </header>
     <main class="main-section">
-        <h1 class="titulo-rojo animate__animated animate__fadeInLeft">The Band</h1>
-        <h2 class="subtitulo-blanco animate__animated animate__fadeInRight"">YOU HAVE SOWN. NOW YOU SHALL REAP.</h2>
-        <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/pentakill2/en_US/7bd32ba296c00775cac78023e40c62381f35cf2c/assets/asset/grasp/band/full/background.png" alt="">
+        <h1 class="titulo-rojo animate__animated animate__fadeInLeft animate__faster">The Band</h1>
+        <h2 class="subtitulo-blanco animate__animated animate__fadeInRight animate__faster">YOU HAVE SOWN. NOW YOU SHALL REAP.</h2>
+        <img class="animate__animated animate__fadeInUp animate__faster" src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/pentakill2/en_US/7bd32ba296c00775cac78023e40c62381f35cf2c/assets/asset/grasp/band/full/background.png" alt="">
     </main>
     <section class="aftermath">
+        <div class="aftermath-div" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <h2 class="titulo-rojo">Aftermath</h2>
             <p class="texto-blanco">When the sky in the far north of the Freljord grows dark, and warriors gather around the hearthfire embers, they sometimes speak of a deathly night on the ice, of murderous rage unbound. It is a tale only spoken of in hushed, awed whispers. Some claim it is no more than a legend invented to frighten youngsters, others claim that even to speak of it is to invite the return of those metal warriors from their tour of the realms beyond. None lived to tell of this grim night, but sometimes a reckless taleteller speaks of a berserk axeman reaping lives with his axe. They whisper that not even his brothers could restrain his fury. Only by bringing a mountain down upon the metal giant was his rampage halted.</p>
             <h3 class="subtitulo-blanco">THUS DID PENTAKILL’S LAST LIVE PERFORMANCE END.</h3>
+        </div>
     </section>
     <!-- ////////////////////////////////////////////// FOOTER ////////////////////////////////////////////// -->
     <footer class="footer">
@@ -42,5 +45,9 @@
         <p>© 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends, PvP.net and Pentakill are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
         <a href="https://pentakill.leagueoflegends.com/en_US/"><img src="img/logo-footer.png" alt=""></a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
