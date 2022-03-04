@@ -74,7 +74,7 @@ a:visited {
 }
 
 .main-section img {
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -655,13 +655,16 @@ a:visited {
   .header {
     height: auto;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     border-bottom: 1px solid #862016;
-    position: static;
+    padding: 0.5rem 0rem;
   }
 
   .logo-header {
     max-width: 30vw;
-    padding: 1rem 0 0.3rem 0;
+    padding-top: 0.5rem;
   }
 
   .lista-header {
@@ -672,6 +675,10 @@ a:visited {
     color: #862016;
     font-size: 4vw;
     padding: 0.1rem 0rem;
+  }
+
+  .lista-header {
+    padding: 0;
   }
 
   .link {
@@ -687,7 +694,7 @@ a:visited {
   }
 
   .main-section {
-    padding-bottom: 5rem;
+    padding: 0rem 0rem 5rem 0rem;
   }
 
   /**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
@@ -701,7 +708,7 @@ a:visited {
 
   /**Estilo para el primer section con clase "aftermath"**/
   .aftermath {
-    padding: 4rem 1rem 4rem 1rem;
+    padding: 4rem 0rem 4rem 0rem;
     height: 100vh;
   }
 
@@ -720,13 +727,6 @@ a:visited {
   .footer {
     padding: 1rem 1rem;
     border-top: 1px solid #862016;
-  }
-
-  /**Div que abarca los iconos de las redes sociales en el footer**/
-
-  .socialmedia img {
-    width: 5vw;
-    padding: 0 0.4rem;
   }
 
   /**Estilo del logo de la banda que se encuentra en el footer**/
@@ -834,6 +834,7 @@ a:visited {
   }
 
   .miembro1 {
+    padding: 0;
     align-items: center;
     background-image: linear-gradient(
       to top,
@@ -846,6 +847,7 @@ a:visited {
   }
 
   .miembro2 {
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
