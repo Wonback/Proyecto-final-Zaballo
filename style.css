@@ -26,7 +26,7 @@ a:visited {
 }
 
 .logo-header {
-  max-width: 12vw;
+  width: calc(10rem + 5vw);
   padding: 0 2rem;
 }
 
@@ -41,7 +41,7 @@ a:visited {
   list-style-type: none;
   background-color: transparent;
   font-weight: bolder;
-  font-size: 2vw;
+  font-size: calc(0.5rem + 1.5vw);
   font-family: "Grenze Gotisch", cursive;
   color: #b62e22;
 }
@@ -50,7 +50,7 @@ a:visited {
   text-decoration: none;
   color: inherit;
   background-color: transparent;
-  padding-right: 2.5rem;
+  padding-right: calc(0.5rem + 1vw);
 }
 
 .link:hover {
@@ -70,7 +70,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   align-items: center;
 }
 
@@ -84,13 +83,14 @@ a:visited {
 .titulo-rojo {
   font-family: "Grenze Gotisch", cursive;
   color: #862016;
-  font-size: 5vw;
+  font-size: calc(4rem + 2vw);
 }
 
 .subtitulo-blanco {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5vw;
   color: #fefeff;
+  font-size: calc(1rem + 1vw);
+  width: 50vw;
   text-align: center;
 }
 
@@ -132,7 +132,7 @@ a:visited {
 .footer {
   background-color: #000000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: #dbdbdb;
   align-items: center;
   padding: 2rem 2rem;
@@ -140,16 +140,37 @@ a:visited {
   font-family: "Roboto", sans-serif;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 /**Div que abarca los iconos de las redes sociales en el footer**/
 
 .socialmedia {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.socialmedia img {
-  width: 40px;
-  padding-right: 1rem;
+.icon {
+  color: rgb(196, 196, 196);
+  font-size: calc(0.7rem + 1vw);
+  padding: 0rem 0.5rem;
+}
+
+.bi-instagram:hover {
+  color: yellow;
+}
+
+.bi-twitter:hover {
+  color: #1da1f2;
+}
+
+.bi-youtube:hover {
+  color: red;
 }
 
 /**Estilo del logo de la banda que se encuentra en el footer**/
@@ -160,7 +181,7 @@ a:visited {
 
 /**--------------------------Estilo pagina "Members"--------------------------**/
 
-.members {
+/**.members {
   background-color: #000000;
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -302,20 +323,95 @@ a:visited {
 .olaf-img {
   grid-area: olaf-img;
 }
+**/
+
+.miembros-main {
+  background-color: #000000;
+}
+
+.miembro1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #2e0b08,
+    #26090a,
+    #1d0609,
+    #120306,
+    #000000
+  );
+}
+
+.miembro2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: linear-gradient(
+    to left,
+    #2e0b08,
+    #26090a,
+    #1d0609,
+    #120306,
+    #000000
+  );
+}
+
+.miembro-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.m-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miembros {
+  padding: 1rem 0rem;
+}
 
 /**Estilo para el texto de la pagina "miembros"**/
 
-.subtitulo-blanco2 {
+.titulo-rojo2 {
+  font-family: "Grenze Gotisch", cursive;
+  color: #862016;
+  font-size: calc(2.5rem + 2vw);
+}
+
+.subtitulo-blancoA {
   font-family: "Roboto", sans-serif;
   color: #fefeff;
-  font-size: 2vw;
+  font-size: calc(0.5rem + 1vw);
+  width: 35vw;
+  text-align: end;
+}
+
+.subtitulo-blancoB {
+  font-family: "Roboto", sans-serif;
+  color: #fefeff;
+  font-size: calc(0.5rem + 1vw);
   width: 35vw;
 }
 
-.texto-blanco2 {
+.texto-blancoA {
   font-family: "Roboto", sans-serif;
   color: #b9b9b9;
   padding-top: 2rem;
+  font-size: calc(0.6rem + 0.5vw);
+  width: 40vw;
+  line-height: 25px;
+  text-align: end;
+}
+
+.texto-blancoB {
+  font-family: "Roboto", sans-serif;
+  color: #b9b9b9;
+  padding-top: 2rem;
+  font-size: calc(0.6rem + 0.5vw);
   width: 40vw;
   line-height: 25px;
 }
@@ -331,9 +427,7 @@ a:visited {
     #1d090d,
     #000000
   );
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -350,7 +444,7 @@ a:visited {
   font-family: "Grenze Gotisch", cursive;
   color: #655938;
   text-align: center;
-  font-size: 3vw;
+  font-size: calc(1.5rem + 2vw);
   width: 100%;
   padding-bottom: 20px;
 }
@@ -358,7 +452,7 @@ a:visited {
 .titulo-album2 {
   font-family: "Grenze Gotisch", cursive;
   color: #0b656a;
-  font-size: 3vw;
+  font-size: calc(1.5rem + 2vw);
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
@@ -367,7 +461,7 @@ a:visited {
 .titulo-album3 {
   font-family: "Grenze Gotisch", cursive;
   color: #4e6055;
-  font-size: 3vw;
+  font-size: calc(1.5rem + 2vw);
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
@@ -375,7 +469,7 @@ a:visited {
 
 /**------------------------Estilo para la pagina "galería"-------------------------**/
 
-.galeria-fotos {
+.galeria-desktop {
   background-image: linear-gradient(
     to right,
     #2c0a07,
@@ -406,6 +500,11 @@ a:visited {
   row-gap: 1rem;
   column-gap: 1rem;
   padding-top: 2rem;
+}
+
+.fotos-mobile {
+  width: 90%;
+  display: none;
 }
 
 .galeria-img img {
@@ -441,7 +540,6 @@ a:visited {
 
 .youtube {
   padding-bottom: 2rem;
-  width: 50%;
 }
 
 /**---------------------------Estilo de la pagina "contacto"---------------------------**/
@@ -454,16 +552,23 @@ a:visited {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #862016;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: calc(0.3rem + 1vw);
   background-color: #000000;
   color: #b9b9b9;
 }
 
 .contacto {
-  background-color: #000000;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #270f14,
+    #47131b,
+    #67181c,
+    #862016
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +576,7 @@ a:visited {
 }
 
 .formulario {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #0f0403;
   display: flex;
   flex-direction: column;
@@ -487,7 +592,8 @@ a:visited {
 .label {
   font-family: "Grenze Gotisch", cursive;
   background: transparent;
-  font-size: 30px;
+  font-size: calc(0.5rem + 2vw);
+  color: white;
 }
 
 /**Estilo de los botones al final del formulario**/
@@ -513,10 +619,10 @@ a:visited {
   padding: 10px 30px;
   margin: 8px 0;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: calc(0.4rem + 1vw);
 }
 
 .boton-enviar:hover {
@@ -535,7 +641,7 @@ a:visited {
   border-radius: 6px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: calc(0.4rem + 1vw);
 }
 
 .boton-reset:hover {
@@ -543,7 +649,7 @@ a:visited {
 }
 
 /* //////////////////////////////////////ESTILO PARA MOBILE/////////////////////////////// */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   /**Estilo para el header**/
 
   .header {
@@ -575,9 +681,13 @@ a:visited {
   /**Estilo para el main**/
 
   .main-section img {
-    max-width: 160vw;
-    object-fit: cover;
-    overflow: hidden;
+    width: 100%;
+    object-fit: contain;
+    padding-top: 5rem;
+  }
+
+  .main-section {
+    padding-bottom: 5rem;
   }
 
   /**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
@@ -591,7 +701,7 @@ a:visited {
 
   /**Estilo para el primer section con clase "aftermath"**/
   .aftermath {
-    padding: 4rem 1rem 0rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
     height: 100vh;
   }
 
@@ -601,7 +711,7 @@ a:visited {
   /**Estilo para el parrafo gris en el primer section**/
 
   .texto-blanco {
-    width: 70vw;
+    width: 80vw;
     padding: 4rem 0;
   }
 
@@ -627,7 +737,7 @@ a:visited {
   }
 
   /**--------------------------Estilo pagina "Members"--------------------------**/
-
+  /**
   .members {
     display: grid;
     grid-template-columns: repeat(1, 100%);
@@ -705,7 +815,7 @@ a:visited {
     grid-area: olaf-img;
   }
 
-  /**Estilo para el texto de la pagina "miembros"**/
+  /**Estilo para el texto de la pagina "miembros"
 
   .subtitulo-blanco2 {
     width: 70vw;
@@ -715,6 +825,68 @@ a:visited {
   .texto-blanco2 {
     color: #b9b9b9;
     width: 60vw;
+  }
+**/
+
+  .miembrosB {
+    flex-direction: column-reverse;
+    border-top: 2px solid #26090a;
+  }
+
+  .miembro1 {
+    align-items: center;
+    background-image: linear-gradient(
+      to top,
+      #2e0b08,
+      #26090a,
+      #1d0609,
+      #120306,
+      #000000
+    );
+  }
+
+  .miembro2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+      to top,
+      #2e0b08,
+      #26090a,
+      #1d0609,
+      #120306,
+      #000000
+    );
+  }
+
+  /**Estilo para el texto de la pagina "miembros"**/
+
+  .subtitulo-blancoA {
+    font-family: "Roboto", sans-serif;
+    color: #fefeff;
+    font-size: calc(0.5rem + 1vw);
+    width: 70vw;
+    text-align: center;
+  }
+
+  .subtitulo-blancoB {
+    font-family: "Roboto", sans-serif;
+    color: #fefeff;
+    font-size: calc(0.5rem + 1vw);
+    width: 70vw;
+    text-align: center;
+  }
+
+  .texto-blancoA {
+    font-size: calc(0.6rem + 0.5vw);
+    width: 70vw;
+    text-align: center;
+  }
+
+  .texto-blancoB {
+    font-size: calc(0.6rem + 0.5vw);
+    width: 70vw;
+    text-align: center;
   }
 
   /**------------------------Estilo para la pagina "discografia"-------------------------**/
@@ -743,15 +915,18 @@ a:visited {
   /**------------------------Estilo para la pagina "galería"-------------------------**/
 
   .fotos {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(9, auto);
-    padding-bottom: 1rem;
+    display: none;
+  }
+
+  .fotos-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
   }
 
   .galeria-videos {
     padding: 0 0;
-    border-top: 1px solid #862016;
   }
 
   .videos {
