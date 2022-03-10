@@ -71,11 +71,17 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
-.main-section img {
+.background-index-desktop {
   width: 100%;
   object-fit: contain;
+  padding: 0;
+}
+
+.background-index-mobile {
+  display: none;
 }
 
 /**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
@@ -84,6 +90,7 @@ a:visited {
   font-family: "Grenze Gotisch", cursive;
   color: #862016;
   font-size: calc(4rem + 2vw);
+  text-align: center;
 }
 
 .subtitulo-blanco {
@@ -97,6 +104,9 @@ a:visited {
 /**Estilo para el primer section con clase "aftermath"**/
 
 .aftermath {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
     to bottom,
     #000000,
@@ -105,6 +115,7 @@ a:visited {
     #67181c,
     #862016
   );
+  height: 100vh;
 }
 
 .aftermath-div {
@@ -112,7 +123,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 0rem 0;
 }
 
 /**Estilo para el parrafo gris en el primer section**/
@@ -132,10 +143,11 @@ a:visited {
 .footer {
   background-color: #000000;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   color: #dbdbdb;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 0.5rem 0.5rem;
   border-top: 2px solid #862016;
   font-family: "Roboto", sans-serif;
 }
@@ -151,6 +163,7 @@ a:visited {
 
 .socialmedia {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -510,9 +523,10 @@ a:visited {
 .galeria-img img {
   width: 100%;
   object-fit: contain;
+  border-radius: 10px;
 }
 
-.galeria-img:hover {
+.galeria-img img:hover {
   transform: scale(1.02);
 }
 
@@ -687,14 +701,19 @@ a:visited {
 
   /**Estilo para el main**/
 
-  .main-section img {
+  .background-index-desktop {
+    display: none;
+  }
+
+  .background-index-mobile {
+    display: flex;
     width: 100%;
     object-fit: contain;
-    padding-top: 5rem;
+    padding: 0rem;
   }
 
   .main-section {
-    padding: 0rem 0rem 5rem 0rem;
+    padding: 0rem;
   }
 
   /**Estilo para los titulos rojos y los subtitulos blancos que están en el main y en el primer section**/
