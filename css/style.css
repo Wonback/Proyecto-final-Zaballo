@@ -12,40 +12,24 @@ a:visited {
   color: #862016; }
 
 /**Estilo para el header**/
-.header {
-  display: flex;
-  background-color: #0c0c0c;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #862016;
-  height: 14vh; }
-  .header .logo-header {
+.header .navbar {
+  background-color: #080808;
+  border-bottom: 2px solid #862016; }
+  .header .navbar .navbar-div .logo-header {
     width: calc(10rem + 5vw);
     padding: 0 2rem; }
-  .header .nav-header {
+  .header .navbar .navbar-div .navlist-div .lista-header li {
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .header .nav-header .lista-header {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center; }
-      .header .nav-header .lista-header li {
-        list-style-type: none;
-        background-color: transparent;
-        font-weight: bolder;
-        font-size: calc(0.2rem + 1.5vw);
-        font-family: "Lato", sans-serif;
-        color: #b62e22; }
-      .header .nav-header .lista-header .link {
-        text-decoration: none;
-        color: inherit;
-        background-color: transparent;
-        padding-right: calc(0.5rem + 1vw); }
-        .header .nav-header .lista-header .link:hover {
-          color: #e73525;
-          font-size: calc(0.3rem + 1.5vw); }
+    justify-content: flex-end;
+    font-weight: bolder;
+    font-size: calc(0.1rem + 1.5vw);
+    font-family: "Lato", sans-serif;
+    padding-right: calc(0.5rem + 1vw); }
+    .header .navbar .navbar-div .navlist-div .lista-header li a {
+      color: #b62e22; }
+      .header .navbar .navbar-div .navlist-div .lista-header li a:hover {
+        color: #ff3624;
+        transform: scale(1.05); }
 
 /**Estilo para el main**/
 .main-section {
@@ -347,30 +331,26 @@ a:visited {
 /* //////////////////////////////////////ESTILO PARA MOBILE/////////////////////////////// */
 @media only screen and (max-width: 576px) {
   /**Estilo para el header**/
-  .header {
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 1px solid #862016;
-    padding: 0.5rem 0rem; }
-    .header .logo-header {
-      max-width: 30vw;
-      padding-top: 0.5rem; }
-    .header .nav-header .lista-header {
-      flex-direction: column;
-      padding: 0; }
-      .header .nav-header .lista-header li {
-        color: #862016;
-        font-size: 4vw;
-        padding: 0.1rem 0rem; }
-        .header .nav-header .lista-header li .link {
-          padding: 0; }
+  .header .navbar .navbar-div .logo-header {
+    width: calc(10rem + 5vw);
+    padding: 0 2rem; }
+  .header .navbar .navbar-div button {
+    color: transparent; }
+    .header .navbar .navbar-div button span {
+      color: #4d4d4d; }
+  .header .navbar .navbar-div .navlist-div .lista-header li {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    font-size: calc(0.4rem + 1.5vw);
+    font-family: "Lato", sans-serif;
+    padding-right: 0;
+    padding: 0.2rem 0rem; }
   .main-section {
+    height: 100vh;
     padding: 0rem; }
     .main-section .titulo-rojo {
-      font-size: 12vw; }
+      font-size: calc(5rem + 2vw); }
     .main-section .subtitulo-blanco {
       font-size: 4vw; }
     .main-section .background-index-desktop {
@@ -380,7 +360,8 @@ a:visited {
       justify-content: center;
       width: 100%;
       object-fit: contain;
-      padding: 0rem; }
+      padding: 0rem;
+      padding-top: 5rem; }
   /**Estilo para el primer section con clase "aftermath"**/
   .aftermath {
     padding: 4rem 0rem 4rem 0rem;
@@ -389,7 +370,7 @@ a:visited {
       padding: 0; }
       .aftermath .aftermath-div .texto-blanco {
         width: 80vw;
-        padding: 4rem 0; }
+        padding: 2rem 0; }
   .footer {
     padding: 1rem 1rem;
     border-top: 1px solid #862016; }
@@ -432,7 +413,7 @@ a:visited {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto); }
     .discografia .album {
-      padding: 1rem 4rem; }
+      padding: 1rem 1rem; }
       .discografia .album .titulo-album1 {
         font-size: 8vw; }
       .discografia .album .titulo-album2 {
