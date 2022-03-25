@@ -239,10 +239,11 @@ a {
   .miembros-cont {
     .miembros {
       padding: 1rem 0rem;
-
-      .miembro-img {
-        width: 100%;
-        object-fit: contain;
+      .m-img {
+        .miembro-img {
+          width: 100%;
+          object-fit: contain;
+        }
       }
 
       .miembro1 {
