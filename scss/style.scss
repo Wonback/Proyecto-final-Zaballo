@@ -18,7 +18,8 @@ $pentakillred: #862016;
   text-align: center;
   padding: 3rem 0;
   line-height: 30px;
-  max-width: 30rem;
+  max-width: 40%;
+  font-size: calc(1rem + 0.3vw);
 }
 
 @mixin subtitulo-blanco {
@@ -155,8 +156,7 @@ a {
     #000000,
     #270f14,
     #47131b,
-    #67181c,
-    #862016
+    #67181c
   );
   height: 100vh;
 
@@ -193,7 +193,7 @@ a {
   padding: 0.5rem 0.5rem;
   border-top: 2px solid $pentakillred;
   font-family: "Roboto", sans-serif;
-
+  height: 7rem;
   .footer-content {
     display: flex;
     justify-content: center;
@@ -202,14 +202,14 @@ a {
 
     .socialmedia {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
 
       .icon {
         color: rgb(196, 196, 196);
         font-size: calc(0.7rem + 1vw);
-        padding: 0rem 0.5rem;
+        padding: 0rem 1rem;
       }
 
       .bi-instagram {
@@ -232,7 +232,12 @@ a {
 }
 
 /**--------------------------Estilo pagina "Members"--------------------------**/
-
+.html {
+  overflow-x: hidden;
+  .html-body {
+    overflow-x: hidden;
+  }
+}
 .miembros-main {
   background-color: #000000;
 
@@ -321,13 +326,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 
   .album {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem 0.5rem;
+    padding: 3em 2rem;
 
     .titulo-album1 {
       font-family: "Grenze Gotisch", cursive;
@@ -460,6 +466,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  height: 90vh;
 
   .formulario {
     border-radius: 10px;
@@ -470,7 +477,25 @@ a {
     justify-content: center;
     background: linear-gradient(180deg, #862016 0%, #000000 100%);
     padding: 1rem 1rem;
-    width: 30rem;
+    width: 50%;
+
+    .nombre-apellido {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      .nombre {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 100%;
+      }
+      .apellido {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 100%;
+      }
+    }
 
     .label {
       font-family: "Roboto", sans-serif;
@@ -495,7 +520,7 @@ a {
 
     .formulario-botones {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background-color: transparent;
       flex-direction: row-reverse;
@@ -509,7 +534,7 @@ a {
         background-color: #488b53;
         color: white;
         padding: 10px 30px;
-        margin: 8px 0;
+        margin: 8px 16px;
         border: none;
         border-radius: 10px;
         cursor: pointer;
@@ -526,7 +551,7 @@ a {
         background-color: #c46d6d;
         color: white;
         padding: 10px 30px;
-        margin: 8px 0;
+        margin: 8px 16px;
         border: none;
         border-radius: 6px;
         cursor: pointer;
@@ -542,6 +567,23 @@ a {
 }
 
 /* //////////////////////////////////////ESTILO PARA MOBILE/////////////////////////////// */
+@media only screen and (max-width: 992px) {
+  .discografia {
+    height: 100%;
+    .album {
+      width: 70%;
+      .titulo-album1 {
+        font-size: calc(3rem + 2vw);
+      }
+      .titulo-album2 {
+        font-size: calc(3rem + 2vw);
+      }
+      .titulo-album3 {
+        font-size: calc(3rem + 2vw);
+      }
+    }
+  }
+}
 @media only screen and (max-width: 576px) {
   /**Estilo para el header**/
 
@@ -566,7 +608,7 @@ a {
               display: flex;
               justify-content: flex-end;
               font-weight: bolder;
-              font-size: calc(0.4rem + 1.5vw);
+              font-size: calc(0.7rem + 1.5vw);
               font-family: "Lato", sans-serif;
               padding-right: 0;
               padding: 0.2rem 0rem;
@@ -620,6 +662,14 @@ a {
   .footer {
     padding: 1rem 1rem;
     border-top: 1px solid #862016;
+    height: 8rem;
+    .footer-content {
+      .socialmedia {
+        .icon {
+          padding: 0rem 0.3rem;
+        }
+      }
+    }
   }
 
   /** Estilo miembros**/
@@ -693,11 +743,10 @@ a {
   /**------------------------Estilo para la pagina "discografia"-------------------------**/
 
   .discografia {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
-
+    height: 100%;
     .album {
       padding: 1rem 1rem;
+      width: 100%;
 
       .titulo-album1 {
         font-size: 8vw;
