@@ -400,11 +400,11 @@ a:visited {
   /**Estilo para el primer section con clase "aftermath"**/
   .aftermath {
     padding: 4rem 0rem 4rem 0rem;
-    height: 100vh; }
+    height: 100%; }
     .aftermath .aftermath-div {
       padding: 0; }
       .aftermath .aftermath-div .texto-blanco {
-        width: 80vw;
+        max-width: 70%;
         padding: 2rem 0; }
   .footer {
     padding: 1rem 1rem;
@@ -420,13 +420,14 @@ a:visited {
     .miembros-main .miembros-cont .miembros .miembro1 .subtitulo-blancoA {
       font-family: "Roboto", sans-serif;
       color: #fefeff;
-      font-size: calc(0.5rem + 1vw);
+      font-size: calc(1rem + .5vw);
       width: 70vw;
       text-align: center; }
     .miembros-main .miembros-cont .miembros .miembro1 .texto-blancoA {
-      font-size: calc(0.6rem + 0.5vw);
+      font-size: calc(0.8rem + 0.5vw);
       width: 70vw;
-      text-align: center; }
+      text-align: center;
+      padding: 1rem 0; }
   .miembros-main .miembros-cont .miembrosB {
     flex-direction: column-reverse;
     border-top: 2px solid #26090a; }
@@ -439,19 +440,20 @@ a:visited {
       .miembros-main .miembros-cont .miembrosB .miembro2 .subtitulo-blancoB {
         font-family: "Roboto", sans-serif;
         color: #fefeff;
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(1rem + .5vw);
         width: 70vw;
         text-align: center; }
       .miembros-main .miembros-cont .miembrosB .miembro2 .texto-blancoB {
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.8rem + 0.5vw);
         width: 70vw;
-        text-align: center; }
+        text-align: center;
+        padding: 1rem 0; }
   /**------------------------Estilo para la pagina "discografia"-------------------------**/
   .discografia {
     height: 100%; }
     .discografia .album {
       padding: 1rem 1rem;
-      width: 100%; }
+      width: 90%; }
       .discografia .album .titulo-album1 {
         font-size: 8vw; }
       .discografia .album .titulo-album2 {
